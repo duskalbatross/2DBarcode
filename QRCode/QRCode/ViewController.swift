@@ -15,9 +15,9 @@ class ViewController: UIViewController {
         
         self.title = "首页"
         
-        let button = UIButton(frame: CGRect(x: (UIScreen.main().bounds.size.width-100) * 0.5, y: (UIScreen.main().bounds.size.height-30) * 0.5, width: 100, height: 30))
+        let button = UIButton(frame: CGRect(x: (UIScreen.main.bounds.size.width-100) * 0.5, y: (UIScreen.main.bounds.size.height-30) * 0.5, width: 100, height: 30))
         button.setTitle("扫一扫", for: UIControlState())
-        button.setTitleColor(UIColor.blue(), for: UIControlState())
+        button.setTitleColor(UIColor.blue, for: UIControlState())
         button.addTarget(self, action: #selector(ViewController.buttonAction(_:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(button)
         

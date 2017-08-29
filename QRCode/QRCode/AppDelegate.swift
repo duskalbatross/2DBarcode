@@ -14,12 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
-        let navigation = UINavigationController(rootViewController: ViewController())
-        self.window?.rootViewController = navigation
-        self.window?.backgroundColor = UIColor.white()
+        // 去掉代码生成navigation，直接在storyboard中把vc嵌入navigationcontroller中
+//        let navigation = UINavigationController(rootViewController: ViewController())
+//        self.window?.rootViewController = navigation
+//        self.window?.backgroundColor = UIColor.white
     
         return true
     }
